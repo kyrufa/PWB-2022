@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html> 
+ <head>
+  <title>  Beljar input video </title>
+ </head>
+ <body> 
+    <button onclick="playVideo()" type="button" > play video </button>
+   <button onclick="pauseVid()" type="button" > pause video </button>
+    <button onclick="enableCohntrols()" type="button" > enable controls  </button>
+	<button onclick="disableControls()" type="button" > disable controls    </button>
+    <button onclick="checkControls()" type="button" > check controls </button>
+	<button onclick ="checkMute()" type="button" > check mute </button>
+	<br> </br>
+	<button onclick="enableMute()" type="button" > mute </button>
+	<button onclick="disableMute()" type="button"> nmute </button>
+		<h1> Mengelola Multimedia</h1>
+			<video id="myVideo" width="320" height="240" controls>
+				<source src="DEN-O.mp4" type="video/mp4">
+			</video>
+	<br> </br>
+	<br> </br>
+			<video id="videoklinci" width="720" height="240" controls >  
+				<source src="klinci.mp4" type="video/mp4">
+			</video>
+ </body>
+ <script> 
+ var vid = document.getElementById("myVideo")
+   
+   function enableControls() {
+     vid.controls= true;
+	 vid.load ();
+   }
+ 
+   function disableControls() {	
+	 vid.controls=false;
+	 vid.load ()
+   }
+ 
+	function checkControls() {
+	  alert(vid.controls);
+	}
+ 
+   function playVideo() {
+     vid.play();
+   }
+   
+   function pauseVid() {
+     vid.pause();
+   }
+   
+    function enableMute() { 
+  vid.muted = true;
+   } 
+
+function disableMute() { 
+  vid.muted = false;
+ } 
+
+function checkMute() { 
+  alert(vid.muted);
+  }
+ </script>
+</html>
