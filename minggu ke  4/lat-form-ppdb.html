@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html> 
+	<head> <title> FORMULIR PENDAFTARAN SISWA TAHUN 2022 </title> </head>
+	<body style="background-color:azure;"> 
+		<form id="ppdb"  method="post" action="kirim.php" > 
+			<h1 align="center" <b> FORMULIS PPDB JALUR ZONASI TAHUN 2022  </b> </h1>
+			<br>
+				<fieldset>
+					<table> 
+						<tr>
+							<td> <b> INFO PENDAFTARAN </b> </td>
+						</tr>
+						<tr> 
+							<td> NISN : </td>
+							<td> <input type="number" name="NISN" placeholder="NISN...." required > </td>
+						</tr>
+						<tr> 
+							<td> Asal sekolah :</td>
+							<td> <input type="text" name="Asalsklh" placeholder="Asal sekolah...." required > </td>
+						</tr>
+						<tr> 
+							<td> Tahun Lulus : </td>
+							<td> <input type="date" name="Tahun" placeholder="Tahun Lulus...." required > </td>
+							<td> (Lampiran foto copy ijazah). <input type="file" name="taun Lulus" required > </td>
+						</tr>
+					</table>
+					<hr> </hr>
+						<p> <b> DATA CALON PESERTA  </B> </P> 
+					<table> 
+						<tr> 
+							<td> Nama lengkap :</td>
+							<td> <input type="text" name="NAMA" placeholder="NAMA...." required > </td>
+						</tr>
+						<tr> 
+							<td> NIK :</td>
+							<td> <input type="number" name="NIK" placeholder="NIK...." required > </td>
+						</tr>
+						<tr> 
+							<td> Tempat/Tanggal Lahir :</td>
+							<td> <input type="date" name="TTL" placeholder="TTL...." required > </td>
+							<td colspan="2"  align="right"> UMUR </td>
+							<td> <input = type="number" name="umur" min="10" max="90" required> </td>
+							<td colspan="2" > Tahun </td>
+						</tr>
+						<tr>
+							<td> Foto Copy Akte Kelahiran yang telah dilegalisir </td>
+							<td> <input type="file"  name="fc legalisir" required > </td>
+						</tr>
+					<tr>
+						<td> Jenis Kelamin :</td>
+						<td> <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki </td>
+						<td> <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan </td>
+					</tr>
+					<tr> 
+							<td> Alamat :</td>
+							<td> <input type="text" name="Alamat" placeholder="Alamat...." required > </td>
+					</tr>
+					<tr> 
+							<td align="right"> Desa/Kelurahan :</td>
+							<td> <input type="text" name="Desa_Kel" placeholder="Desa/Kel...." required > </td>
+					</tr> 
+					<tr> 
+							<td align="right"> Kecamatan :</td>
+							<td> <input type="text" name="Kecamatan" placeholder="Kecamatan...." required > </td>
+					</tr>
+					<tr> 
+							<td align="right"> Kabupaten :</td>
+							<td> <input type="text" name="Kabupaten" placeholder="Kabupaten...." required > </td>
+					</tr>
+					<tr> 
+							<td align="right"> Provinsi :</td>
+							<td> <input type="text" name="Provinsi" placeholder="Provinsi...." required > </td>
+					</tr>
+					<tr> 
+							<td> Email Aktif :</td>
+							<td> <input type="email" name="email" placeholder="Email...." required > </td>
+					</tr>
+					</table>
+					<hr> </hr>
+					`	<p> <b> DATA ORANG TUA </b> </p>
+						<p> (Lampiran KK) <input type="file" name="Lamp_KK" required > </p>
+					<table>
+						<tr> 
+							<td> Nomor Kartu Keluarga :</td>
+							<td> <input type="number" name="Nomor_KK" placeholder="Nomor Kartu Keluarga...." required > </td>
+						</tr>
+						<tr> 
+							<td> Nama Ayah Kandung :</td>
+							<td> <input type="text" name="Nama_Ayah" placeholder="Nama Ayah...." required > </td>
+						</tr>
+						<tr>
+							<td> Agama :
+								<td> 
+									<select name="Agama"> 
+										<option value="Islam" > Islam </option>
+										<option value="Kristen" > Kristen </option>
+										<option value="Katolik" > Katolik </option>
+										<option value="Hindu" > Hindu </option>
+										<option value="Buddha" > Buddha </option>
+									</select> 
+								</td>
+							</td>
+						</tr>
+						<tr>						
+							<td> Pekerjaan :</td>
+							<td> <input type="text" name="Pkerjaan_Ayah" placeholder="Pekerjaan  Ayah...." required > </td>
+						</tr>
+						<tr> 
+							<td> Nama Ibu Kandung :</td>
+							<td> <input type="text" name="Nama_Ibu" placeholder="Nama Ibu...." required > </td>
+						</tr>
+						<tr>
+							<td> Agama :
+								<td> 
+									<select name="Agama"> 
+										<option value="Islam" > Islam </option>
+										<option value="Kristen" > Kristen </option>
+										<option value="Katolik" > Katolik </option>
+										<option value="Hindu" > Hindu </option>
+										<option value="Buddha" > Buddha </option>
+									</select> 
+								</td>
+							</td>
+						</tr>
+						<tr>						
+							<td> Pekerjaan :</td>
+							<td> <input type="text" name="Pkerjaan_Ibu" placeholder="Pekerjaan  Ibu...." required > </td>
+						</tr>
+						<tr>
+							<td> Alamat Orang Tua </td>
+							<td> <input type="text" name="Alamat_ortu" placeholder="Alamat " required> </td>
+						</tr>
+						<tr> 
+							<td align="right"> Desa/Kelurahan :</td>
+							<td> <input type="text" name="Desa_Kel_ortu" placeholder="Desa/Kel...." required > </td>
+						</tr> 
+						<tr> 
+							<td align="right"> Kecamatan :</td>
+							<td> <input type="text" name="Kecamatan_ortu" placeholder="Kecamatan...." required > </td>
+						</tr>
+						<tr> 
+							<td align="right"> Kabupaten :</td>
+							<td> <input type="text" name="Kabupaten_ortu" placeholder="Kabupaten...." required > </td>
+						</tr>
+						<tr> 
+							<td align="right"> Provinsi :</td>
+							<td> <input type="text" name="Provinsi_ortu" placeholder="Provinsi...." required > </td>
+						</tr>
+						<tr>
+						<td colspan="2"> <input type="submit" name="submit" value="kirim"> </td>
+						</tr>
+					</table>
+				</fieldset>
+		</form>
+	</body>
+</html>

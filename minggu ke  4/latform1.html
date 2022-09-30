@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html> 
+	<head>
+		<title>belajar form </title>
+	</head>
+<body> 
+	<h1> belejar form HTML 5 </h1>
+		<form id="form1" method="post" action="kirim.php">
+			<table> 
+				<tr> 
+					<td>NIM</td>
+					<td> <input type="nuber" name="fnim"> </td>
+				</tr>
+				<tr> 
+					<td>NAMA</td>
+					<td> <input type="text" name="fnama"> </td>
+				</tr>
+				<tr> 
+					<td>Program Studi</td>
+					<td> 
+						<select name="fprodi">
+							<option value=""> Pilih program studi </option>
+							<option value="A11"> S1- TEKNIK INFORMATIKA </option>
+							<option value="A12"> S1- SISTEM INFORMASI </option>
+							<option value="A22"> S1- TEKNIK ELEKTRO </option>
+						</select> 
+					</td>
+				</tr>
+				<tr> 
+					<td>TGL LAHIR</td>
+					<td> <input type="date" name="ftgl_lahir"> </td> <br>
+				</tr>
+				<tr> 
+					<td> HOBBY</td>
+						<td>
+							<input type="checkbox" name="hobby1" value="101">
+							<label for="hobby1" > WEB DEVELOPER </label><br>
+							<input type="checkbox" name="hobby2" value="102">
+							<label for="hobby2" > MOBILE DEVELOPER </label> <br>
+							<input type="checkbox" name="hobby3" value="103">
+							<label for="hobby3" >MOBILE GAMES  </label> <br>
+						</td>
+				</tr>
+				<tr> 
+					<td colspan="2" align="center"> 
+						<input type="submit" name="fkirim" value="kirim">
+					</td>
+				</tr>
+			</table>
+		</form>
+</body>	
+</html>

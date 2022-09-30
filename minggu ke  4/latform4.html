@@ -1,0 +1,67 @@
+<!DOCTYPE html > 
+<html> 
+	<head> 
+		<title> Latihan Form 4 </title>
+	</head>
+	<body> 
+		<form id="form2" method="post" action="kirim.php"> 
+			<fieldset> 
+				<legend> Registrasi </legend>
+				<table>
+					<tr>
+						<td> name : </td>
+						<td> <input type="name" name="nama" placeholder="nama lengkap...."/> </td>
+					</tr> 
+					<tr>
+						<td> username : </td>
+						<td> <input type="text" name="username" placeholder="username..."/> </td>
+					</tr> 
+					<tr>
+						<td> email </td>
+						<td> <input type="email" name="email" placeholder="email..."> </td>
+					</tr> 
+					<tr>
+						<td> password </td>
+						<td> <input type="password" name="password" placeholder="password..."> </td>
+					</tr>
+					<tr>
+						<td> Jenis Kelamin </td>
+						<td> <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki </td>
+						<td> <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan </td>
+					</tr>
+					<tr>
+						<td> Agama </td>
+						<td> 
+							<select name="Agama"> 
+								<option value="Islam" > Islam </option>
+								<option value="Kristen" > Kristen </option>
+								<option value="Katolik" > Katalik </option>
+								<option value="Hindu" > Hindu </option>
+								<option value="Buddha" > Buddha </option>
+							</select> 
+						</td>
+					</tr>
+					<tr>
+						<td> Biografi </td>
+						<td> <textarea name="biografi" width="200px" height="450" >  </textarea> </td>
+					</tr> 
+					<tr>
+						<td> Alamat web </td>
+						<td> <input type="url" name="alamat web" placeholder="masukkan url web... /"> </td>
+					</tr> 
+					<tr>
+						<td> Tanggal lahir </td>
+						<td> <input type="date" name="tanggal"/> </td>
+					</tr> 
+					<tr>
+						<td> Umur </td>
+						<td> <input type="number" name="email" min="10" max="90"> </td>
+					</tr> 
+					<tr>
+					<td> <input type="submit" name="submit" value="login"> </td>
+					</tr>
+				</table>	
+			</fieldset>
+		</form>
+	</body>
+</html>
