@@ -1,0 +1,1 @@
+alert("Haslo ini adalah program Javasxript External");
