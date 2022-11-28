@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <title>  array method</title>
+    </head>
+
+    <body>
+        <script>
+            // method filter
+            const angka = [1,2,3,4,5,6,7,8,9];
+
+            // a,bil array yang bisa dibagi dua
+            const filteredarray = angka.filter(item => item %2 === 0);
+
+            console.log(filteredarray)
+
+            // method include
+            var tanaman = ["pohon" , "kaktus" , "anggrek" , " lotus"]
+            // apakah lotus sudah ada didlaam array ??
+            var adalotus = tanaman.includes("lotus");
+            console.log(adalotus);
+
+            // apakah bayam ada  ???
+            var adabayam = tanaman.includes("bayam");
+            console.log(adabayam);
+
+            // method sort
+            var huruf = ['l', 'o' , 'a' ,'g' , 'q' , 'a'];
+            var number = [ 9,20,1,4,2,11];
+
+            console.log(huruf.sort());
+            console.log(number.sort());
+        </script>
+    </body>
+</html>

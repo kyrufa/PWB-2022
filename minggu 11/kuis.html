@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <title> kuis html </title>
+    </head>
+
+    <body>
+        ,<h1> Data Mahasiswa </h1>
+        <form action="javascript:void(0)" method="POST" onsubmit="apl.Add()" >
+            <input   type="text" placeholder="nama mhs " id="add-name" >
+            <input  type="submit" value="+">
+            <p> Jumlah ??? </p>
+            <table>
+                <thead>
+                    <tr>
+                        <td> Nama </td>
+                    </tr>
+                </thead>
+                <tbody id="mhs">
+                    
+                    <!-- Dinamis berdasarkan isian -->
+                </tbody>
+
+            </table>
+        </form>
+        <script>
+            var apl = new function() {
+                this.el= document.getElementById('mhs');
+                this.mhs = ['mahmud' , 'subhan' , 'test'];
+
+                    this.barisA11 = function() {
+                        var data = ' ';
+                    
+                    if (this.mhs.lenght > 0)
+                    {
+                        for ( i = 0; i < this.mhs.lenght; i++)
+                        {
+                            data += '<tr>';
+                            data += 'td' + this.mhs[i] +'</td>';
+                            data += '<tr>';
+                        }
+                        return this
+                    }
+                    }
+            }
+        </script>
+
+    </body>
+</html>

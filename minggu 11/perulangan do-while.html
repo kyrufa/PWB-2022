@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Perulangando/ while</title>
+    </head>
+
+    <body>
+        <script>
+            var ulang = prompt("apakah anda ingin mengualang ??");
+            var counter= 0;
+            
+            do
+            {
+                counter ++;
+                ulang = confirm("apakah ingin mengulang kembali ?? ");
+            }
+            while(ulang);
+            
+            document.write("<p> anda sudah mengulangi sebanyak " + counter +"</p> ");
+        </script>
+    </body>
+</html>

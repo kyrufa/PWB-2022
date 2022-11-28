@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Perulangan while</title>
+    </head>
+
+    <body>
+        <script>
+            var ulang = prompt("apakah anda ingin mengualang ??");
+            var counter= 0;
+            
+            while(ulang)
+            {
+                var jawab = prompt("apakah ingin mengulang kembali ?? ");
+                counter ++;
+
+                if (jawab == false)
+                {
+                    ulang=false;
+                }
+            }
+            document.write("<p> anda sudah mengulangi sebanyak " + counter +"</p> ");
+        </script>
+    </body>
+</html>

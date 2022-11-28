@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <title> array dan perulangan f</title>
+    </head>
+
+    <body>
+        <script>
+            // membuat array
+            var produk  = ["minyak" , "kayu" , "mebel" , "sampo"];
+            
+            document.write(" <h3> daftar produk : </h3>");
+            document.write("<ol>");
+
+            // menggunakan perulangan untuk mencetak isi array
+            for(i=0; i < produk.length; i++)
+            {
+                document.write (`<li> ${produk[i]} </li>  `);
+            }
+            document.write("</ol>");
+        </script>
+    </body>
+</html>
