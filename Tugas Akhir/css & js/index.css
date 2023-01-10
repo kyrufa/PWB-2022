@@ -1,0 +1,112 @@
+
+* {
+    margin:0; 
+    padding:0;
+    font-family: sans-serif;
+}
+
+nav {
+   margin:auto;
+   text-align: center;
+   width: 100%;
+   font-family: arial;
+} 
+
+nav ul {
+   background:black;
+   padding: 0 20px;
+   list-style: none;
+   position: relative;
+   display: inline-table;
+   width: 100%;
+}
+
+nav ul li{
+   float:left;
+}
+
+nav ul li:hover{
+   background: #fff;
+}
+
+nav ul li:hover a{
+    color:#000;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner{
+	height: 60vh;
+	background-image: url(../games/banner.jpg);
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:after{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(136, 0, 0, 0.6);
+}
+.banner h2{
+	color: #fff;
+	z-index: 1;
+	padding: 20px 25px;
+	border: 3px solid #fff;
+}
+
+
+
+.about p{
+	color: rgb(0, 0, 0);
+	word-spacing: 2px;
+	line-height: 25px;
+}
+
+section{
+	padding: 50px 0;
+}
+section h3{
+	text-align: center;
+	padding: 20px 0;
+	color: black;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container:after{
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+#sosmed{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 30px 0;
+    padding: 12px;
+}
+
+
+
